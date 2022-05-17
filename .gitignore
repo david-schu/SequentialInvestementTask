@@ -1,0 +1,16 @@
+
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
+.idea/SocialInvestmentTask.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/modules.xml
+*.xml
+Bubble.zip
+stockmarkets.csv
+*.mat
+*.pyc
+*.zip
+*.npy
+*.txt
+data/Bubble_2007_raw/__MACOSX/._RawBehavioral_Bubble_2021
+*.png
