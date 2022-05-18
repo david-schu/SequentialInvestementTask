@@ -2,7 +2,6 @@ from utils import load_data_patient as load_data
 from model import fit, nll
 import numpy as np
 from scipy.stats import zscore
-import matplotlib.pyplot as plt
 
 subject = load_data(6)
 subject['prev'] = subject['bet']
@@ -31,14 +30,9 @@ opt_params = ['w_mu',
 ]
 
 x0 = np.random.normal(0, .1, len(opt_params))
-# x0 = np.zeros(len(opt_params))
-x_fi, ll, bic = fit(subject, x0, opt_params)
+x_fit, ll, bic = fit(subject, x0, opt_params)
 
 fit = dict(zip(opt_params, x_fit))
-
-# fit = []
-# for i in range(n-1):
-#     fit.append(dict(zip(opt_params, x_fit[i*len(opt_params):(i+1)*len(opt_params)])))
 
 nll(subject, x_fit, opt_params)
 
