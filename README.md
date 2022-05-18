@@ -4,7 +4,7 @@ code of the Master's thesis by David Schultheiß
 
 ## Data parsing
 
-The data for each subject is parsed from raw data files into pandas DataFrames with load_data.py in the helperFiles folder. Hereby, market predictions generated with the GaussianProcess.py file. To adjust the Gaussian process details, you can change the kernel parameters, or the Gaussian Process itself. 
+The data for each subject is parsed from raw data files into pandas DataFrames with load_data.py in the helperFiles folder. Hereby, market predictions generated with the GaussianProcess.py file. To adjust the Gaussian process details, you can change the kernel parameters in the load_data.py file, or the Gaussian Process itself. 
 
 ## Jupyter Notebooks
 
